@@ -12,15 +12,16 @@
 	</head>
   <body>
 		<form id="connect-form" onSubmit="return false;">
-			<h1><i>n</i>irc</h1>
-			<label for="server">Server *</label> <input type="text" id="server" placeholder="irc.freenode.net"/>
-			<label for="port">Port</label> <input type="text" id="port" placeholder="6667"/>
-      <label for="nickname">Nickname *</label> <input type="text" id="nickname" placeholder="Gordon"/>
-			<label for="user">User</label> <input type="text" id="user" placeholder="Gordon"/>
-      <label for="password">Password</label> <input type="password" id="password" />
-			<label for="channels">Channels *</label> <input type="text" id="channels" placeholder="#nirc, #node.js"/>
-      <input type="checkbox" id="ssl"/> <label for="ssl">SSL</label>
-			<input type="submit" id="connect" value="Connect"/>
+			<h1>##utk_ieee</h1>
+      <input type="hidden" id="server" value="irc.freenode.net"/>
+      <input type="hidden" id="port" value="6667"/>
+      <label for="nickname">Nickname *</label> <input type="text" id="nickname" placeholder="volunteer1"/>
+      <label for="passphrase">Passphrase *</label> <input type="password" id="passphrase"/>
+      <input type="hidden" id="user" value=""/>
+      <input type="hidden" id="password" />
+      <input type="hidden" id="channels" value="##utk_ieee"/>
+      <input type="hidden" id="ssl"/>
+      <input type="submit" id="connect" value="Connect"/>
 		</form>
 		
 		<div id="irc-stuff">		  
